@@ -25,7 +25,7 @@ public struct Pollutants: Decodable {
         case "Inhalable particulate matter (<10µm)":
             return proper ? "PM₁₀" : "pm10"
         case "Fine particulate matter (<2.5µm)":
-            return proper ? "PM₂.₅" : "pm25"
+            return proper ? "PM₂₅" : "pm25"
         case "Sulfur dioxide":
             return proper ? "SO₂" : "so2"
         default:

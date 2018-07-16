@@ -16,4 +16,9 @@ public struct Pollutant: Decodable {
         self.units = unit
         self.concentration = concentration
     }
+
+    public func getFormattedUnit() -> String {
+        if units == "ug/m3" { return "μg/m³" }
+        return "ppb"
+    }
 }
