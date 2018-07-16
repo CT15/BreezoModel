@@ -60,14 +60,14 @@
 		B2BA268E20FC2FE20003F3F6 /* BreezoModel */ = {
 			isa = PBXGroup;
 			children = (
-				B2BA269720FC30060003F3F6 /* Model (Global) */,
+				B2BA269720FC30060003F3F6 /* Model */,
 				B2BA268F20FC2FE20003F3F6 /* BreezoModel.h */,
 				B2BA269020FC2FE20003F3F6 /* Info.plist */,
 			);
 			path = BreezoModel;
 			sourceTree = "<group>";
 		};
-		B2BA269720FC30060003F3F6 /* Model (Global) */ = {
+		B2BA269720FC30060003F3F6 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				B2BA269820FC30060003F3F6 /* AirQuality.swift */,
@@ -78,7 +78,7 @@
 				B2BA26A220FC30F10003F3F6 /* Pollutants.swift */,
 				B2BA26A420FC314C0003F3F6 /* AqiType.swift */,
 			);
-			path = "Model (Global)";
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
