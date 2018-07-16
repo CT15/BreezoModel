@@ -11,6 +11,7 @@
  Can be customized to extract the necessary information from AirQualityService model.
  */
 public struct AirQuality {
+    // Change the properties of this structure to match the need of your application.
     public let breezometer_aqi: Int
     public let breezometer_color: String
     public let breezometer_description: String

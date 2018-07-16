@@ -17,6 +17,9 @@ public struct Pollutant: Decodable {
         self.concentration = concentration
     }
 
+    // There are only 2 different pollutants units.
+    // "ppb" is already in the correct format.
+    // "μg/m³" is returned if units is "ug/m3".
     public var formattedUnit: String {
         return self.units == "ug/m3" ? "μg/m³" : "ppb"
     }
