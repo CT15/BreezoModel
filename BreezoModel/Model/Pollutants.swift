@@ -14,22 +14,33 @@ public struct Pollutants: Decodable {
     public let pm25: Pollutant
     public let so2: Pollutant
 
-    // Returns the chemical formula of the pollutant provided.
-    // Setting proper to false returns the pollutant name without capitalization and subscript.
-    public static func checmicalFormula(of pollutant: Pollutant, proper: Bool = true) -> String? {
-        switch pollutant.pollutant_description {
-        case "Carbon monoxide":
-            return proper ? "CO" : "co"
-        case "Nitrogen dioxide":
-            return proper ? "NO₂" : "no2"
-        case "Ozone":
-            return proper ? "O₃" : "o3"
-        case "Inhalable particulate matter (<10µm)":
-            return proper ? "PM₁₀" : "pm10"
-        case "Fine particulate matter (<2.5µm)":
-            return proper ? "PM₂.₅" : "pm25"
-        case "Sulfur dioxide":
-            return proper ? "SO₂" : "so2"
+    /// Returns the formatted formula of the pollutant provided.
+    /// Returns nil if the pollutant does not contribute towards AQI calculation.
+    /// - Parameters:
+    ///     - pollutant: A pollutant object
+    public static func checmicalFormula(of pollutant: Pollutant) -> String? {
+        return self.chemicalFormula(of: pollutant.pollutant_description)
+    }
+
+    /// Returns the formatted formula of the pollutant string provided.
+    /// Returns nil if the pollutant does not contribute towards AQI calculation.
+    /// - Parameters:
+    ///     - pollutant: Either a pollutant name e.g. "Carbon monoxide" or unformatted chemical
+    ///                  formula e.g. "co"
+    public static func chemicalFormula(of pollutant: String) -> String? {
+        switch pollutant {
+        case "Carbon monoxide", "co":
+            return "CO"
+        case "Nitrogen dioxide", "no2":
+            return "NO₂"
+        case "Ozone", "o3":
+            return "O₃"
+        case "Inhalable particulate matter (<10µm)", "pm10":
+            return "PM₁₀"
+        case "Fine particulate matter (<2.5µm)", "pm25":
+            return "PM₂.₅"
+        case "Sulfur dioxide", "so2" :
+            return "SO₂"
         default:
             return nil
         }
