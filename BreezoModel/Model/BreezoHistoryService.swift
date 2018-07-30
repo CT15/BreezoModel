@@ -12,5 +12,5 @@ import UIKit
  Intermediary between BreezoHistory structure and history JSON data obtained from Breezometer.
  */
 public struct BreezoHistoryService: Decodable {
-    public let forecast: [AirQualityService]
+    public let history: [AirQualityService]
 }

@@ -12,17 +12,17 @@
  Change the properties of AirQuality structure to match the need of your application.
  */
 public struct BreezoHistory: BreezoFilteredData {
-    public let forecast: [AirQuality];
+    public let history: [AirQuality];
 }
 
 extension BreezoHistory {
     public init(from service: BreezoHistoryService) {
         var data = [AirQuality]()
 
-        service.forecast.forEach {
+        service.history.forEach {
             data.append(AirQuality(from: $0))
         }
 
-        forecast = data
+        history = data
     }
 }
