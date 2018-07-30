@@ -1,5 +1,5 @@
 //
-//  BreezoForecastService.swift
+//  BreezoHistoryService.swift
 //  BreezoModel
 //
 //  Created by Calvin Tantio on 30/7/18.
@@ -9,9 +9,8 @@
 import UIKit
 
 /**
- Intermediary between BreezoForecast structure and forecast JSON data obtained from Breezometer.
+ Intermediary between BreezoHistory structure and history JSON data obtained from Breezometer.
  */
-public struct BreezoForecastService: Decodable {
+public struct BreezoHistoryService: Decodable {
     public let forecast: [AirQualityService]
-    
 }
