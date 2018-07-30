@@ -9,6 +9,6 @@
 /**
  A protocol to indicate that a model is a filtered data model.
  */
-protocol BreezoFilteredData {
+public protocol BreezoFilteredData {
 
 }
