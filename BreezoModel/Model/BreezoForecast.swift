@@ -11,7 +11,7 @@
  The structure is dependent on AirQuality model.
  Change the properties of AirQuality structure to match the need of your application.
  */
-public struct BreezoForecast {
+public struct BreezoForecast: BreezoFilteredData {
     public let forecast: [AirQuality];
 }
 
