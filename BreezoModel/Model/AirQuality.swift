@@ -6,7 +6,7 @@
 //  Copyright © 2018 Calvin Tantio. All rights reserved.
 //
 
-/*
+/**
  The Air Quality model structure.
  Can be customized to extract the necessary information from AirQualityService model.
  */
