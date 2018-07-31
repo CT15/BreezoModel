@@ -22,6 +22,7 @@ public struct AirQualityService: Decodable {
     public let country_color: String
     public let country_description: String
     public let data_valid: Bool
+    public let key_valid: Bool
     public let random_recommendations: RandomRecommendations
     public let dominant_pollutant_canonical_name: String
     public let dominant_pollutant_description: String
