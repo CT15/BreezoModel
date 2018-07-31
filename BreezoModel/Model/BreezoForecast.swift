@@ -12,7 +12,7 @@
  Change the properties of AirQuality structure to match the need of your application.
  */
 public struct BreezoForecast: BreezoFilteredData {
-    public let forecast: [AirQuality];
+    public let forecast: [AirQuality]
 }
 
 extension BreezoForecast {

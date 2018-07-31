@@ -11,7 +11,6 @@
 		B2637239210EA79F00B21B5C /* BreezoForecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2637238210EA79F00B21B5C /* BreezoForecast.swift */; };
 		B263723B210EADB100B21B5C /* BreezoFilteredData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B263723A210EADB100B21B5C /* BreezoFilteredData.swift */; };
 		B2637241210F02CC00B21B5C /* BreezoHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2637240210F02CC00B21B5C /* BreezoHistory.swift */; };
-		B2637243210F02E100B21B5C /* BreezoHistoryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2637242210F02E100B21B5C /* BreezoHistoryService.swift */; };
 		B2BA269120FC2FE20003F3F6 /* BreezoModel.h in Headers */ = {isa = PBXBuildFile; fileRef = B2BA268F20FC2FE20003F3F6 /* BreezoModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B2BA269A20FC30060003F3F6 /* AirQuality.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BA269820FC30060003F3F6 /* AirQuality.swift */; };
 		B2BA269B20FC30060003F3F6 /* AirQualityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BA269920FC30060003F3F6 /* AirQualityService.swift */; };
@@ -27,7 +26,6 @@
 		B2637238210EA79F00B21B5C /* BreezoForecast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreezoForecast.swift; sourceTree = "<group>"; };
 		B263723A210EADB100B21B5C /* BreezoFilteredData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreezoFilteredData.swift; sourceTree = "<group>"; };
 		B2637240210F02CC00B21B5C /* BreezoHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreezoHistory.swift; sourceTree = "<group>"; };
-		B2637242210F02E100B21B5C /* BreezoHistoryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreezoHistoryService.swift; sourceTree = "<group>"; };
 		B2BA268C20FC2FE20003F3F6 /* BreezoModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BreezoModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2BA268F20FC2FE20003F3F6 /* BreezoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BreezoModel.h; sourceTree = "<group>"; };
 		B2BA269020FC2FE20003F3F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -91,7 +89,6 @@
 				B2637238210EA79F00B21B5C /* BreezoForecast.swift */,
 				B263723A210EADB100B21B5C /* BreezoFilteredData.swift */,
 				B2637240210F02CC00B21B5C /* BreezoHistory.swift */,
-				B2637242210F02E100B21B5C /* BreezoHistoryService.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -185,7 +182,6 @@
 				B2637235210EA55500B21B5C /* BreezoForecastService.swift in Sources */,
 				B2BA269A20FC30060003F3F6 /* AirQuality.swift in Sources */,
 				B2BA269D20FC30570003F3F6 /* RandomRecommendations.swift in Sources */,
-				B2637243210F02E100B21B5C /* BreezoHistoryService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
